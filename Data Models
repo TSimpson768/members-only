@@ -11,4 +11,4 @@ User
 -has_many Posts
 - ID - int
 - Username - text, unique
-- Rest from devise defaults
+- Rest from devise defaultss
