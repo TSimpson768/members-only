@@ -11,8 +11,7 @@
 </p>
 
 <p>
-  <strong>Author:</strong>
-  <%= @post.user.username %>
+  <%= render partial: 'author', :locals => {:username => @post.user.username} %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
