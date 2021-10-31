@@ -1,0 +1,14 @@
+Members Only!
+
+-Post
+belongs_to User
+-ID - Int
+- Title - text, Present, Unique
+- Body - text, Present
+- Author - int, Forigen Key
+
+User
+-has_many Posts
+- ID - int
+- Username - text, unique
+- Rest from devise defaults
