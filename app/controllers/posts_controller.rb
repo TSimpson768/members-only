@@ -70,6 +70,7 @@ class PostsController < ApplicationController
     end
 
     def authorized?
-      redirect_to :posts, notice: "You are not permitted to edit this post" unless @post.user_id == current_user.id
+      flash[:error] =  'You are not permitted to perform this action!'
+      redirect_to :posts unless @post.user_id == current_user.id
     end
 end
