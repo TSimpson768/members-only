@@ -45,6 +45,8 @@
   min-height: 20vh;
   background-color: #ededed;
   margin: 0%;
+  text-align: center;
+  color: gray;
 }
 
 .header {
@@ -56,4 +58,28 @@
   padding-right: 10px;
   align-items: center;
   background-color: royalblue;
+}
+
+.header a{ 
+  text-decoration: underline;
+  background-color: lightslategrey;
+  border: black;
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.header a:visited{
+  color: black;
+}
+
+.header a:hover{
+  background-color: rgb(155, 165, 175);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }

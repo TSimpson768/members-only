@@ -12,7 +12,11 @@
 
   <body>
   <div class = 'header'>
+    <div class = header-container>
       <h1>Members Only!</h1>
+      <%= link_to 'Home', posts_path %>
+      <%= link_to 'Share your secret!', new_post_path %>
+    </div>
       <%= render 'user_panel'%>
   </div>
   <div class = 'content'>
