@@ -1,17 +1,18 @@
 <%= render 'flash' %>
-<h1>Posts</h1>
+<h1>All Secrets</h1>
 
 
 
   <% @posts.each do |post| %>
-    <div>
+    <%= link_to post do %>
+    <div class = 'post-preview'>
       <h2><%= post.title %></h2>
       <h3>By: <%= render partial: 'author', :locals => {:username => post.user.username} %> </h3>
-      <%= link_to 'Show', post %>
     </div>
+    <% end %>
   <% end %>
 
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+<%= link_to 'Share your secret!', new_post_path %>

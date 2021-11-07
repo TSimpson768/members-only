@@ -1,3 +1,24 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.post-preview {
+  border: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  margin: 25px;
+  text-decoration: none;
+}
+.post-preview *{
+  text-decoration: none;
+}
+.post-preview:hover{
+  background-color: gray;
+}
+
+.post-preview:active{
+  background-color: orangered;
+}
+
+a {
+  text-decoration: none;
+}

@@ -17,7 +17,7 @@
  body {
    min-height: 100vh;
    margin: 0%;
-   background-color: #ededed;
+   
    color: black;
  }
 
@@ -43,6 +43,7 @@
 }
 .footer {
   min-height: 20vh;
+  background-color: #ededed;
   margin: 0%;
 }
 
