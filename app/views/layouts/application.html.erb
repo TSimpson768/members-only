@@ -11,8 +11,16 @@
   </head>
 
   <body>
-  <h1>Members Only!</h1>
-  <%= render 'user_panel'%>
+  <div class = 'header'>
+      <h1>Members Only!</h1>
+      <%= render 'user_panel'%>
+  </div>
+  <div class = 'content'>
     <%= yield %>
+  </div>
+
+  <div class=footer>
+    <p>Proudly made in Yorkshire</p>
+  </div>
   </body>
 </html>
